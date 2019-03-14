@@ -1,0 +1,25 @@
+{
+  "name": "remake-bugs-site-express",
+  "version": "1.0.0",
+  "description": "Remaking the NYU BUGS website using Express",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnntrn/remake-bugs-site-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnntrn/remake-bugs-site-express/issues"
+  },
+  "homepage": "https://github.com/dnntrn/remake-bugs-site-express#readme"
+}
