@@ -1,0 +1,31 @@
+
+.limitWidthBody{
+  width: 70%;
+  margin: auto;
+}
+
+
+.secondaryPageTitle{
+  margin-top: 6%;
+  margin-bottom: 8%;
+  font-size: 5em;
+}
+
+
+.profilePageSect{
+  margin-bottom: 15%;
+}
+.sectionTitle{
+  margin-bottom: 5%;
+}
+
+.indivProfileRow{
+  margin-bottom: 3%;
+}
+
+.aboutProfilePics{
+  width: 170px;
+  height: 170px;
+  max-height: auto;
+  border-radius: 50%;
+}

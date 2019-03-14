@@ -1,138 +1,71 @@
 
-<main>
-  <h1>About</h1>
+<main class= "limitWidthBody">
+  <h1 class= "secondaryPageTitle">About</h1>
 
   <section>
-    <h1>Eboard Members</h1>
+
     <div class="container">
 
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          <h2>Veena Arvind</h2>
-          <h3>President</h3>
-          <p>
-            Sophomore studying Computer Science in CAS. She loves to talk about code
-            with other people. In her free time, Veena goes to the gym, makes jewelry,
-            and plays card games.
-          </p>
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
+      <section class= "profilePageSect">
+        <h1 class= "sectionTitle">Eboard Members</h1>
+          {{#each eBoardProfilesSrcArr}}
+            <div class="indivProfileRow row justify-content-md-center">
+              <div class="col-md-auto">
+                <img class= "aboutProfilePics" src={{this.src}} width = {{this.width}} height= {{this.height}} alt= {{this.alt}}>
+              </div>
+              <div class="col col-lg-7">
+                <h2>{{this.name}}</h2>
+                <h3>{{this.title}}</h3>
+                <p>
+                  {{this.bio}}
+                </p>
+              </div>
+            </div>
+          {{/each}}
+      </section>
 
 
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
+      <section class= "profilePageSect">
+        <h1 class= "sectionTitle">Founding Members</h1>
+          {{#each foundingProfilesSrcArr}}
+            <div class="indivProfileRow row justify-content-md-center">
+              <div class="col-md-auto">
+                <img class= "aboutProfilePics" src={{this.src}} width = {{this.width}} height= {{this.height}} alt= {{this.alt}}>
+              </div>
+              <div class="col col-lg-7">
+                <h2>{{this.name}}</h2>
+                <p>
+                  {{this.bio}}
+                </p>
+              </div>
+            </div>
+          {{/each}}
+      </section>
 
 
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
+      <section class= "profilePageSect">
+        <h1 class= "sectionTitle">Faculty Mentor</h1>
 
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          1 of 3
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
+          {{#each facultyProfilesSrcArr}}
+            <div class="indivProfileRow row justify-content-md-center">
+              <div class="col-md-auto">
+                <img class= "aboutProfilePics" src={{this.src}} width = {{this.width}} height= {{this.height}} alt= {{this.alt}}>
+              </div>
+              <div class="col col-lg-7">
+                <h2>{{this.name}}</h2>
+                <p>
+                  {{this.bio}}
+                </p>
+              </div>
+            </div>
+          {{/each}}
+      </section>
 
     </div>
+
+
   </section>
 
 
 
-  <h1>Founding Members</h1>
-  <h1>Faculty Mentor</h1>
-  <p>
-    Open source represents a form of licensing that encourages collaboration and transparency.
-    Although open source licenses may take a number of forms, essential features include being able
-    to freely study, change, and distribute the source code. BUGS is focused on the promotion of open
-    source by engaging students in open source projects on the local and global scale, hosting speakers
-    who work with open source in industry and philanthropy, and running events to advocate for open standards
-    in subjects such as data and innovation.GS is a member of the Mozilla-led Open Source Student Network
-    (OSSN), a network of university students and clubs who share the belief that open source software –
-    technology built with code that is open for view, use, and modification – is the engine that powers
-    innovation. Mozilla's goal is to support, empower and help Clubs and their members towards getting more
-    skills and contributing to Open Source Projects through this network of Clubs.
-  </p>
 </main>
