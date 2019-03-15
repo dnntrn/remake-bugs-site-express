@@ -107,3 +107,15 @@
   background: #1abc9c;
   color: white !important
 }
+
+
+#footer {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color: purple;
+  margin-top: 15%;
+}
+
+.contactLinksFooter a{
+  margin-right: 5%;
+}
