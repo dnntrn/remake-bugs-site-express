@@ -28,6 +28,18 @@ app.get("/calendar", function(req, res){
 
 });
 
+app.get("/connect", function(req, res){
+
+  res.render("connect", {});
+
+});
+
+app.get("/projects", function(req, res){
+
+  res.render("projects", {});
+
+});
+
 
 app.get("/about", function(req, res){
 
