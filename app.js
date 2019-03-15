@@ -22,6 +22,12 @@ app.get("/", function(req, res){
 
 });
 
+app.get("/calendar", function(req, res){
+
+  res.render("calendar", {});
+
+});
+
 
 app.get("/about", function(req, res){
 
@@ -153,8 +159,6 @@ app.get("/about", function(req, res){
 			walks, and read Econ papers, sometimes simultaneously.`
 		},
 
-
-
 		{
 			name: "Samuel Lin",
 			title: "Vice Project Lead",
@@ -228,7 +232,6 @@ app.get("/about", function(req, res){
 		"facultyProfilesSrcArr": facultyProfilesSrc
 	});
 
-// , {imgSource: profilesSrc[0].src}, {width: profilesSrc[0].width}, {height: profilesSrc[0].height}, {alt: profilesSrc[0].alt}
 });
 
 app.listen(PORT);
