@@ -8,6 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.set('view engine', 'hbs');
 
+
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(function(req, res, next) {
@@ -18,25 +19,52 @@ app.use(function(req, res, next) {
 
 
 app.get("/", function(req, res){
-  res.render("index", {});
+	const leadershipPics = [
+		{
+			name: "Veena Arvind",
+			title: "President",
+			src: "img/profiles/veenaTransparent.png",
+			alt: "Veena Arvind",
+			width: "990",
+			height: "819",
+			bio: `Sophomore studying Computer Science in CAS. She loves to talk about code
+			with other people. In her free time, Veena goes to the gym, makes jewelry,
+			and plays card games.`
+		},
+
+		{
+			name: "Ami Anachiappan",
+			title: "Vice President",
+			src: "img/profiles/amiTransparent.png",
+			alt: "Veena Arvind",
+			width: "990",
+			height: "819",
+			bio: `Sophomore from California studying Computer Science and Economics. In her free time,
+			she loves spending time with family, running, and of course, coding!`
+		}
+	];
+  res.render("index", {"leadership": leadershipPics});
 
 });
 
 app.get("/calendar", function(req, res){
 
-  res.render("calendar", {});
+  res.render("calendar", {"layout": "secondaryLayout",
+	"secondaryPageTitle": "Calendar"});
 
 });
 
 app.get("/connect", function(req, res){
 
-  res.render("connect", {});
+  res.render("connect", {"layout": "secondaryLayout",
+	"secondaryPageTitle": "Connect"});
 
 });
 
 app.get("/projects", function(req, res){
 
-  res.render("projects", {});
+  res.render("projects", {"layout": "secondaryLayout",
+	"secondaryPageTitle": "Projects"});
 
 });
 
@@ -241,7 +269,9 @@ app.get("/about", function(req, res){
   res.render("about", {
 		"eBoardProfilesSrcArr": eBoardProfilesSrc,
 		"foundingProfilesSrcArr": foundingProfilesSrc,
-		"facultyProfilesSrcArr": facultyProfilesSrc
+		"facultyProfilesSrcArr": facultyProfilesSrc,
+		"layout": "secondaryLayout",
+		"secondaryPageTitle": "Leadership Team"
 	});
 
 });

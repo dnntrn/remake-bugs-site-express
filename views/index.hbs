@@ -1,7 +1,8 @@
 <header>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">NYU BUGS</h1>
+      <h1 class="display-4" id= "indexHeader">NYU BUGS</h1>
+      <img src = "img/logo_no_title copy.png" alt= "BUGS logo" width= "1458" height = "1246" style= "width: 9%; height:auto;">
       <p class="lead">NYU's First and Only Open Source Club</p>
     </div>
   </div>
@@ -9,17 +10,57 @@
 </header>
 
 <main class= "limitWidthBody">
-  <!-- <h2>NYU's Open Source Club</h2> -->
-  <p>
-    Open source represents a form of licensing that encourages collaboration and transparency.
-    Although open source licenses may take a number of forms, essential features include being able
-    to freely study, change, and distribute the source code. BUGS is focused on the promotion of open
-    source by engaging students in open source projects on the local and global scale, hosting speakers
-    who work with open source in industry and philanthropy, and running events to advocate for open standards
-    in subjects such as data and innovation.GS is a member of the Mozilla-led Open Source Student Network
-    (OSSN), a network of university students and clubs who share the belief that open source software –
-    technology built with code that is open for view, use, and modification – is the engine that powers
-    innovation. Mozilla's goal is to support, empower and help Clubs and their members towards getting more
-    skills and contributing to Open Source Projects through this network of Clubs.
-  </p>
+  <br>
+  <section class= "indexSections">
+    <h2>What is BUGS?</h2>
+    <br>
+      <p id= "indexDescription">
+        Open source represents a form of licensing that encourages collaboration and transparency.
+        Although open source licenses may take a number of forms, essential features include being able
+        to freely study, change, and distribute the source code. BUGS is focused on the promotion of open
+        source by engaging students in open source projects on the local and global scale, hosting speakers
+        who work with open source in industry and philanthropy, and running events to advocate for open standards
+        in subjects such as data and innovation.GS is a member of the Mozilla-led Open Source Student Network
+        (OSSN), a network of university students and clubs who share the belief that open source software –
+        technology built with code that is open for view, use, and modification – is the engine that powers
+        innovation. Mozilla's goal is to support, empower and help Clubs and their members towards getting more
+        skills and contributing to Open Source Projects through this network of Clubs.
+      </p>
+
+  </section>
+
+  <br>
+  <br>
+
+  <section class= "indexSections">
+    <h2>Leadership</h2>
+      <br>
+
+      <div class="row">
+        {{#each leadership}}
+          <div class="col indexLeaders">
+            <img class= "" src={{this.src}} width = {{this.width}} height= {{this.height}} alt= {{this.alt}}>
+          </div>
+        {{/each}}
+      </div>
+      <br>
+      <a href= "about"><button type="button" class="btn btn-light index-btn">Full eBoard >></button></a>
+
+  </section>
+
+
+  <br>
+  <br>
+
+  <section class= "indexSections">
+    <h2>Upcoming Events!</h2>
+      <br>
+      <div class="alert alert-dark" role="alert">
+        New events <span class= "alert-link">coming soon</span>!
+      </div>
+      <br>
+      <a href= "/calendar"><button type="button" class="btn btn-light index-btn">Full Calendar >></button></a>
+  </section>
+
+
 </main>
