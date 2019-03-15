@@ -49,7 +49,7 @@ nav{
 #footer {
   padding-bottom: 5%;
   padding-top: 5%;
-  background-color: #EEEEEE;
+  background-color: #A87CA0;
   margin-top: 15%;
 }
 
@@ -89,6 +89,13 @@ nav{
   height: auto;
 }
 
+footer a:link{
+  color: #302334;
+}
+
+.footer-btn{
+  color: #5B3256 !important;
+}
 .index-btn{
   color: #5B3256 !important;
   float: right;
